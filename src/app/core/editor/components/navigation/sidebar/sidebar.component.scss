@@ -1,0 +1,88 @@
+.sidebar {
+    will-change: width;
+    transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+    height: 100%;
+    position: relative;
+  }
+  
+  .sidebar-content {
+    height: 100%;
+    left: 0px;
+    min-width: 240px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    --bg-opacity: 1;
+        background-color: rgba(255,255,255,1);
+    border-top-right-radius: .625rem;
+
+  }
+  
+  .not-implemented {
+    top: 7px;
+    left: 40px;
+    width: 140px;
+    padding: 5px 0 5px 8px;
+    --bg-opacity: 1;
+    background-color: #dfe1e6;
+    background-color: rgba(223, 225, 230, var(--bg-opacity));
+    --text-opacity: 1;
+    color: #42526E;
+    color: rgba(66, 82, 110, var(--text-opacity));
+    display: inline-block;
+    position: absolute;
+    border-radius: 0.125rem;
+    text-transform: uppercase;
+    opacity: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 0.125rem;
+    --text-opacity: 1;
+    color: #172b4d;
+    color: rgba(23, 43, 77, var(--text-opacity));
+  }
+  
+  .link:hover .not-implemented {
+    opacity: 1;
+  }
+  
+  .active {
+    --text-opacity: 1;
+    color: #0052cc;
+    color: rgba(0, 82, 204, var(--text-opacity));
+    --bg-opacity: 1;
+    background-color: #ebecf0;
+    background-color: rgba(235, 236, 240, var(--bg-opacity));
+  }
+  
+  .allowed:hover {
+    --bg-opacity: 1;
+    background-color: #ebecf0;
+    background-color: rgba(235, 236, 240, var(--bg-opacity));
+  }
+  
+  .not-allowed {
+    cursor: not-allowed;
+  }
+  
+  .divider {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top-width: 1px;
+    --border-opacity: 1;
+    border-color: #C1C7D0;
+    border-color: rgba(193, 199, 208, var(--border-opacity));
+  }

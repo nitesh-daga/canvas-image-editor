@@ -1,0 +1,9 @@
+<div class="canvas-container-box">
+  <canvas-toolbar class="toolbar" (emitAction)="handleCanvasActions($event)"></canvas-toolbar>
+  <div class="canvas-wrapper" droppable (onDrop)="cdkImageDrop($event)">
+      <div class="canvas-content" [style.width]="containerWidth" [style.height]="containerHeight" style="position: relative;">
+        <canvas id="canvas" class="img-canvas" #canvas style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+        <canvas class="img-canvas" [style.width]="containerWidth" [style.height]="containerHeight" #fabriccanvas style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+      </div>
+  </div>
+</div>

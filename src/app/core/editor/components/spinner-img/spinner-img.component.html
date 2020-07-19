@@ -1,0 +1,13 @@
+<div style="position: relative;">
+    <div *ngIf="loading" class="loading-bg-abs">
+      <div class="lds-ripple blue">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <img [hidden]="loading" #img (click)="showImageModal()" (load)="onLoad()" src="{{imgSrc}}" class="img" alt="Pic"/>
+    <div [style.display]="showModal ? 'block' : 'none'" id="imageModal" class="modal">
+      <span (click)="hideImageModal()" class="close">&times;</span>
+      <img class="modal-content" src="{{imgSrc}}">
+    </div>
+  </div>

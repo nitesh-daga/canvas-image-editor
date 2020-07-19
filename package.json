@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.4",
+    "@angular/cdk": "^10.0.2",
     "@angular/common": "~10.0.4",
     "@angular/compiler": "~10.0.4",
     "@angular/core": "~10.0.4",
@@ -19,7 +20,12 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "@types/fabric": "^3.6.8",
+    "fabric": "^3.6.3",
+    "ng-drag-drop": "^5.0.0",
+    "ngx-infinite-scroll": "^9.0.0",
     "rxjs": "~6.5.5",
+    "subsink": "^1.0.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

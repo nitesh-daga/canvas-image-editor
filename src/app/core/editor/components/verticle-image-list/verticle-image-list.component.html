@@ -1,0 +1,16 @@
+<div class="vertical-list">
+    <ul class="img-list" 
+        infiniteScroll 
+        [infiniteScrollDistance]="2"
+        [infiniteScrollThrottle]="50"
+        [scrollWindow]="false"
+        (scrolled)="onScroll()">
+        <li class="list-item" draggable [dragData]="item"
+                    *ngFor="let item of ImageList">
+            <spinner-img #spinner [imgSrc]="item.download_url"></spinner-img>
+        </li>
+        <!-- <li class="list-item" *ngIf="true" style="width: 80%;">
+            <app-loader></app-loader>
+        </li> -->
+    </ul>
+</div>

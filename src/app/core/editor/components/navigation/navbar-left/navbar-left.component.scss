@@ -1,0 +1,12 @@
+@import "./../../../../../../assets/styles/variable";
+.navbarLeft-content{
+    height: 100vh;
+    width: 64px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $background;
+    color: $foreground;
+    flex-shrink: 0;
+}
