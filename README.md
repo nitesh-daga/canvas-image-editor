@@ -1,4 +1,6 @@
-# Invideo
+# Simple Online Graphics Design Platform - Using Angular, Canvas, Fabricjs
+
+## Demo Url : http://canvas-image-editor.s3-website.ap-south-1.amazonaws.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
